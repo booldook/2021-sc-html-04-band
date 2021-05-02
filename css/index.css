@@ -1,8 +1,9 @@
 /*************** 공통사항 *****************/
 body {height: 10000px;}
-.wrapper {max-width: 1000px; margin: auto;}
-h2.title {font-size: 32px; text-align: center;}
-h3.title {font-style: italic; color: #aaa; text-align: center;}
+.wrapper {max-width: 768px; margin: auto;}
+h2.title {font-size: 32px; letter-spacing: 5px; text-align: center; margin-bottom: 30px;}
+h3.title {font-style: italic; color: #aaa; text-align: center; font-size: 15px; margin-bottom: 16px;}
+p.content {line-height: 1.5; font-size: 15px; text-align: justify; margin-bottom: 16px;}
 section:not(.main-wrapper) {padding: 100px 0;}
 
 /*************** header-wrapper *****************/
@@ -18,10 +19,19 @@ section:not(.main-wrapper) {padding: 100px 0;}
 
 
 /*************** band-wrapper *****************/
-
+.band-wrapper .member {float: left; width: 33.3333%; padding: 48px;}
+.band-wrapper h4.title {text-align: center; margin-bottom: 16px;}
+.band-wrapper .member img {border-radius: 6px;}
 
 /*************** tour-wrapper *****************/
-
+.tour-wrapper {background-color: #000;}
+.tour-wrapper h2.title {color: #fff;}
+.tour-wrapper .list-wrap {background-color: #f5f5f5; 
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+}
+.tour-wrapper .list-wrap .list {padding: 16px; border-bottom: 1px solid #ccc;}
 
 /*************** contact-wrapper *****************/
 
