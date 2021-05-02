@@ -1,3 +1,7 @@
+/* 
+display: inline 인 태그는 width/height/margin-top/margin-bottom 이 적용되지 않는다. 그래서 위의 네개 속성을 주기 위해서는 display: inline-block을 적용한다.
+*/
+
 /*************** 공통사항 *****************/
 body {height: 10000px;}
 .wrapper {max-width: 768px; margin: auto;}
@@ -31,6 +35,8 @@ section {padding: 100px 0;}
 	border: 1px solid #ccc;}
 .tour-wrapper .list-wrap .list {padding: 16px;}
 .tour-wrapper .list-wrap .list:not(:last-child) {border-bottom: 1px solid #ccc;}
+.tour-wrapper .list-wrap .list .soldout {background-color: #f30; color: #fff; padding: 3px 6px; margin-left: 16px;}
+.tour-wrapper .list-wrap .list .count {float: right; background-color: #000; color: #fff; padding: 8px; border-radius: 50%;}
 
 /* 
 .tour-wrapper .list1 {background-color: red;}
