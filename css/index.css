@@ -4,7 +4,7 @@ body {height: 10000px;}
 h2.title {font-size: 32px; letter-spacing: 5px; text-align: center; margin-bottom: 30px;}
 h3.title {font-style: italic; color: #aaa; text-align: center; font-size: 15px; margin-bottom: 16px;}
 p.content {line-height: 1.5; font-size: 15px; text-align: justify; margin-bottom: 16px;}
-section:not(.main-wrapper) {padding: 100px 0;}
+section {padding: 100px 0;}
 
 /*************** header-wrapper *****************/
 .header-wrapper {background-color: #000; color: #fff;}
@@ -16,7 +16,8 @@ section:not(.main-wrapper) {padding: 100px 0;}
 .header-wrapper .search-wrap i:hover {background-color: #f30; cursor: pointer;}
 
 /*************** main-wrapper *****************/
-
+/* section.main-wrapper {padding: 100px;} */
+.main-wrapper {padding: 0;}
 
 /*************** band-wrapper *****************/
 .band-wrapper .member {float: left; width: 33.3333%; padding: 48px;}
@@ -27,11 +28,15 @@ section:not(.main-wrapper) {padding: 100px 0;}
 .tour-wrapper {background-color: #000;}
 .tour-wrapper h2.title {color: #fff;}
 .tour-wrapper .list-wrap {background-color: #f5f5f5; 
-	border-left: 1px solid #ccc;
-	border-right: 1px solid #ccc;
-	border-top: 1px solid #ccc;
-}
-.tour-wrapper .list-wrap .list {padding: 16px; border-bottom: 1px solid #ccc;}
+	border: 1px solid #ccc;}
+.tour-wrapper .list-wrap .list {padding: 16px;}
+.tour-wrapper .list-wrap .list:not(:last-child) {border-bottom: 1px solid #ccc;}
+
+/* 
+.tour-wrapper .list1 {background-color: red;}
+.tour-wrapper .list-wrap > :nth-child(2) {background-color: green;}
+.tour-wrapper .list-wrap > :nth-child(3) {background-color: blue;} 
+*/
 
 /*************** contact-wrapper *****************/
 
