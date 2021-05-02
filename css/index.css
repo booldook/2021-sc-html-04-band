@@ -1,0 +1,33 @@
+/*************** 공통사항 *****************/
+body {height: 10000px;}
+.wrapper {max-width: 1000px; margin: auto;}
+h2.title {font-size: 32px; text-align: center;}
+h3.title {font-style: italic; color: #aaa; text-align: center;}
+section:not(.main-wrapper) {padding: 100px 0;}
+
+/*************** header-wrapper *****************/
+.header-wrapper {background-color: #000; color: #fff;}
+.header-wrapper .navi-wrap {float: left;}
+.header-wrapper .navi-wrap .navi {float: left; padding: 16px 24px; cursor: pointer;}
+.header-wrapper .navi-wrap .navi:hover {color: #000; background-color: #bbb;}
+.header-wrapper .search-wrap {float: right;}
+.header-wrapper .search-wrap i {padding: 16px;}
+.header-wrapper .search-wrap i:hover {background-color: #f30; cursor: pointer;}
+
+/*************** main-wrapper *****************/
+
+
+/*************** band-wrapper *****************/
+
+
+/*************** tour-wrapper *****************/
+
+
+/*************** contact-wrapper *****************/
+
+
+/*************** loc-wrapper *****************/
+
+
+/*************** footer-wrapper *****************/
+

@@ -8,8 +8,11 @@ border: 두께 스타일(solid, dotted, dashed, double) 색상
 */
 
 /* display: block */
-html, body, h1, h2, h3, h4, h5, h6, p, div, header, footer, section, aside, article, ul, ol, li, dl, dd, dt {margin: 0; padding: 0; box-sizing: border-box;}
+html, body, h1, h2, h3, h4, h5, h6, p, div, header, footer, section, aside, article, ul, ol, li, dl, dd, dt {margin: 0; padding: 0; box-sizing: border-box; line-height: 1;}
+
+h1, h2, h3, h4, h5, h6 {font-weight: normal;}
 
 a:link, a:visited, a:hover, a:active {color: inherit; text-decoration: none;}
 
 .clear::after {display: block; content: ""; clear: both;}
+.w100 {width: 100%;}
