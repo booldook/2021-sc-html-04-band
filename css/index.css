@@ -72,5 +72,8 @@ section {padding: 100px 0;}
 /*************** loc-wrapper *****************/
 .loc-wrapper img {filter: grayscale(50%); /* ie는 제외 */}
 
-/*************** footer-wrapper *****************/
 
+/*************** footer-wrapper *****************/
+.footer-wrapper {text-align: center; color: #777;}
+.footer-wrapper .sns-wrap {font-size: 24px; margin-bottom: 16px;}
+.footer-wrapper .sns-wrap a:hover {opacity: .6;}
