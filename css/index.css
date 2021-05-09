@@ -70,7 +70,7 @@ section {padding: 100px 0;}
 
 
 /*************** loc-wrapper *****************/
-
+.loc-wrapper img {filter: grayscale(50%); /* ie는 제외 */}
 
 /*************** footer-wrapper *****************/
 
