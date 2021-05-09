@@ -26,9 +26,15 @@ FORM 요소 - 회원가입, 로그인, 주문, 게시글
 	<style>
 		.wrapper {max-width: 800px; margin: auto; padding: 32px 0;}
 		h1.title {text-align: center; text-decoration: underline; margin-bottom: 24px;}
-		form {border: 1px solid #ccc; padding: 24px;}
+		form {border: 1px solid #ccc; padding: 24px; font-size: 16px;}
 		form > div {padding: 8px 0; border-bottom: 1px solid #eee;}
-		input[type="text"], input[type="password"], input[type="file"] {padding: 8px; font-size: 16px;}
+		form input[type="text"]:focus,
+		form input[type="password"]:focus {outline: none; border: 3px solid yellowgreen; box-shadow: 0 0 6px rgba(6, 112, 20, 0.5);}
+		input[type="text"], input[type="password"] {padding: 8px;}
+		input[type="file"] {padding: 8px 0;}
+		input[type="radio"], input[type="checkbox"] {margin: 14px 0;}
+		select {padding: 8px;}
+		textarea {padding: 8px; width: 100%; max-width: 100%; height: 300px; max-height: 300px; overflow-y: scroll;}
 	</style>
 </head>
 <body>
@@ -43,6 +49,32 @@ FORM 요소 - 회원가입, 로그인, 주문, 게시글
 			</div>
 			<div>
 				<input type="file" name="avatar" placeholder="아바타 선택">
+			</div>
+			<div>
+				<input type="radio" name="gender" id="radioMan"> 
+				<label for="radioMan">남자</label>
+				<input type="radio" name="gender" id="radioWomen">
+				<label for="radioWomen">여자</label>
+			</div>
+			<div>
+				<input type="checkbox" name="hobby" id="chkMusic"> 
+				<label for="chkMusic">음악감상</label>
+				<input type="checkbox" name="hobby" id="chkMovie">
+				<label for="chkMovie">영화감상</label>
+			</div>
+			<div>
+				<select name="tel1" id="tel1">
+					<option value="">선택</option>
+					<option value="010">010</option>
+					<option value="011">011</option>
+					<option value="016">016</option>
+					<option value="017">017</option>
+					<option value="018">018</option>
+					<option value="019">019</option>
+				</select>
+			</div>
+			<div>
+				<textarea name="content" id="txtContent" placeholder="내용 입력"></textarea>
 			</div>
 		</form>
 	</div>
