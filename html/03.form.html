@@ -44,7 +44,7 @@ FORM 요소 - 회원가입, 로그인, 주문, 게시글
 <body>
 	<div class="wrapper">
 		<h1 class="title">FORM요소를 배워봅시다.</h1>
-		<form action="#">
+		<form action="#" method="GET">
 			<div>
 				<input type="text" name="userid" placeholder="아이디 입력" maxlength="16" required autofocus>
 			</div>
@@ -55,15 +55,15 @@ FORM 요소 - 회원가입, 로그인, 주문, 게시글
 				<input type="file" name="avatar" placeholder="아바타 선택">
 			</div>
 			<div>
-				<input type="radio" name="gender" id="radioMan"> 
+				<input type="radio" name="gender" id="radioMan" value="남자"> 
 				<label for="radioMan">남자</label>
-				<input type="radio" name="gender" id="radioWomen">
+				<input type="radio" name="gender" id="radioWomen" value="여자">
 				<label for="radioWomen">여자</label>
 			</div>
 			<div>
-				<input type="checkbox" name="hobby" id="chkMusic"> 
+				<input type="checkbox" name="hobby" id="chkMusic" value="음악감상"> 
 				<label for="chkMusic">음악감상</label>
-				<input type="checkbox" name="hobby" id="chkMovie">
+				<input type="checkbox" name="hobby" id="chkMovie" value="영화감상">
 				<label for="chkMovie">영화감상</label>
 			</div>
 			<div>
