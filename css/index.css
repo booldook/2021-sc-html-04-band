@@ -56,6 +56,10 @@ section {padding: 100px 0;}
 */
 
 /*************** contact-wrapper *****************/
+.contact-wrapper .desc-wrapper {padding: 32px 0;}
+.contact-wrapper .info-wrap {font-size: 18px;}
+.contact-wrapper .info-wrap i {width: 30px;}
+.contact-wrapper .info-wrap > * {margin-bottom: 16px;}
 
 
 /*************** loc-wrapper *****************/
