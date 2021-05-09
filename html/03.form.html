@@ -1,0 +1,50 @@
+<!-- 
+FORM 요소 - 회원가입, 로그인, 주문, 게시글
+- 웹사이트에서 사용자의 입력을 받아서 서버에 전송하는 요소들
+-- form
+-- input(text)
+-- input(password)
+-- input(radio)
+-- input(checkbox)
+-- input(file)
+-- input(hidden)
+-- select
+-- textarea
+-- button(submit)
+-- button(button)
+-- button(reset)
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form을 배워보자</title>
+	<link rel="stylesheet" href="../css/all.min.css">
+	<link rel="stylesheet" href="../css/base.css">
+	<style>
+		.wrapper {max-width: 800px; margin: auto; padding: 32px 0;}
+		h1.title {text-align: center; text-decoration: underline; margin-bottom: 24px;}
+		form {border: 1px solid #ccc; padding: 24px;}
+		form > div {padding: 8px 0; border-bottom: 1px solid #eee;}
+		input[type="text"], input[type="password"], input[type="file"] {padding: 8px; font-size: 16px;}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<h1 class="title">FORM요소를 배워봅시다.</h1>
+		<form action="#">
+			<div>
+				<input type="text" name="userid" placeholder="아이디 입력">
+			</div>
+			<div>
+				<input type="password" name="userpw" placeholder="패스워드 입력">
+			</div>
+			<div>
+				<input type="file" name="avatar" placeholder="아바타 선택">
+			</div>
+		</form>
+	</div>
+</body>
+</html>
