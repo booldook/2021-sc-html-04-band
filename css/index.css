@@ -14,17 +14,24 @@ p.content {line-height: 1.5; font-size: 15px; text-align: justify; margin-bottom
 section {padding: 100px 0;}
 
 /*************** header-wrapper *****************/
-.header-wrapper {background-color: #000; color: #fff;}
+.header-wrapper {background-color: #000; color: #fff; position: fixed; z-index: 99; width: 100%;}
 .header-wrapper .navi-wrap {float: left;}
-.header-wrapper .navi-wrap .navi {float: left; padding: 16px 24px; cursor: pointer;}
+.header-wrapper .navi-wrap .navi {float: left; padding: 16px 24px; cursor: pointer; position: relative;}
 .header-wrapper .navi-wrap .navi:hover {color: #000; background-color: #bbb;}
+.header-wrapper .navi-wrap .navi:hover > .sub-wrap {display: block;}
+.header-wrapper .navi-wrap .navi > .sub-wrap {background-color: #fff; color: #000; position: absolute; left: 0; top: 48px; display: none; box-shadow: 0 0 10px rgba(0,0,0, .3);}
+.header-wrapper .navi-wrap .navi > .sub-wrap > .sub {padding: 12px 48px 12px 16px;}
+.header-wrapper .navi-wrap .navi > .sub-wrap > .sub:hover {background-color: #bbb;}
 .header-wrapper .search-wrap {float: right;}
 .header-wrapper .search-wrap i {padding: 16px;}
 .header-wrapper .search-wrap i:hover {background-color: #f30; cursor: pointer;}
 
 /*************** main-wrapper *****************/
 /* section.main-wrapper {padding: 100px;} */
-.main-wrapper {padding: 0;}
+.main-wrapper {padding: 40px 0 0 0; position: relative; }
+.main-wrapper .title-wrap {position: absolute; bottom: 50px; width: 100%; color: #fff; text-align: center;}
+.main-wrapper .title-wrap h2 {font-size: 24px; margin-bottom: 16px;}
+.main-wrapper .title-wrap h3 {font-size: 16px;}
 
 /*************** band-wrapper *****************/
 .band-wrapper .member {float: left; width: 33.3333%; padding: 48px;}
