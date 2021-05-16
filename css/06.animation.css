@@ -1,8 +1,66 @@
-.wrapper {max-width: 1000px; margin: 0 auto;}
-.title-wrapper {padding: 50px 0 30px 0; text-align: center;}
-.content-wrapper {border: 2px solid yellowgreen; padding: 50px;}
+/* 
+장면전환 	transition: all .5s; (속성명)
+변형 			transform: translate(10px, 10px); (속성명)
+이동 			translate(속성값)
+*/
 
-.box h3 {font-size: 48px;}
+html, body {height: 10000px;}
 
-.box1 {border: 10px solid red; padding: 50px; background-color: blueviolet; color: #fff; display: inline-block; transition: all 1s; width: 70%;}
-.box1:hover {background-color: chartreuse; width: 100%;}
+.wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.title-wrapper {
+	padding: 50px 0 30px 0;
+	text-align: center;
+}
+
+.content-wrapper {
+	border: 2px solid yellowgreen;
+	padding: 50px;
+	margin: 30px auto;
+}
+
+.box h3 {
+	font-size: 48px;
+}
+
+.box1 {
+	width: 70%;
+	border: 10px solid red;
+	padding: 50px;
+	background-color: blueviolet;
+	color: #fff;
+	display: inline-block;
+	transition: width .5s, background-color 5s;
+}
+
+.box1:hover {
+	background-color: chartreuse;
+	width: 100%;
+}
+
+.box2 {
+	width: 50%; height: 100px; background-color: coral;
+	/* transform: translate(100px, 200px); */
+	/* transform: translate(50%, 30%);  translate의 %는 본인크기의 % */
+	transition: all 1s;
+}
+.box2:hover {transform: translate(50%, 0);}
+
+.content-wrapper.bg-wrapper {padding: 0; position: relative;}
+.bg-wrapper h3.title {font-size: 80px; color: #c9d423; border: 1px solid red; 		position: absolute; 
+	/* top: calc(50% - 42px); left: calc(50% - calc(474.656px / 2)); */
+	top: 50%; left: 50%; transform: translate(-50%, -50%);
+}
+
+
+.header-wrapper {margin: 50px 0;}
+.header-wrapper .navi-wrap {text-align: center;}
+.header-wrapper .navi-wrap .navi {display: inline-block; margin: 16px 24px; overflow: hidden; cursor: pointer; transition: all .5s;}
+
+.header-wrapper .navi-wrap .navi .bar {height: 3px; background-color: #072791; margin-top: 12px; transform: translateX(-100%); transition: transform .5s;}
+
+.header-wrapper .navi-wrap .navi:hover {transform: translateY(-12px);}
+.header-wrapper .navi-wrap .navi:hover .bar {transform: translateX(0);}

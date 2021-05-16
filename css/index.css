@@ -16,7 +16,7 @@ section {padding: 100px 0;}
 /*************** header-wrapper *****************/
 .header-wrapper {background-color: #000; color: #fff; position: fixed; z-index: 99; width: 100%;}
 .header-wrapper .navi-wrap {float: left;}
-.header-wrapper .navi-wrap .navi {float: left; padding: 16px 24px; cursor: pointer; position: relative;}
+.header-wrapper .navi-wrap .navi {float: left; padding: 16px 24px; cursor: pointer; position: relative; transition: all .75s;}
 .header-wrapper .navi-wrap .navi:hover {color: #000; background-color: #bbb;}
 .header-wrapper .navi-wrap .navi:hover > .sub-wrap {display: block;}
 .header-wrapper .navi-wrap .navi > .sub-wrap {background-color: #fff; color: #000; position: absolute; left: 0; top: 48px; display: none; box-shadow: 0 0 10px rgba(0,0,0, .3);}
