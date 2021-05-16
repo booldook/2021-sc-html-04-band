@@ -49,7 +49,10 @@ section {padding: 100px 0;}
 .tour-wrapper .list-wrap .list .count {float: right; background-color: #000; color: #fff; padding: 2px 8px; border-radius: 50%; margin-top: -2px;}
 .tour-wrapper .city-wrap {width: 102%;}
 .tour-wrapper .city-wrap .city {width: 31.3333%; margin-right: 2%; float: left;}
-.tour-wrapper .city-wrap .img-wrap:hover img {opacity: .7;}
+.tour-wrapper .city-wrap .img-wrap {overflow: hidden;}
+.tour-wrapper .city-wrap .img-wrap img {transition: all .75s;}
+.tour-wrapper .city-wrap .img-wrap:hover img {opacity: .7; 
+	transform: scale(1.2) rotate(5deg);}
 .tour-wrapper .city .desc-wrap {background-color: #fff; color: #000; padding: 16px; letter-spacing: -.5px;}
 .tour-wrapper .city .desc-wrap h4.title {font-weight: bold; margin-bottom: 16px;}
 .tour-wrapper .city .desc-wrap p.date {color: #999; margin-bottom: 16px;}
