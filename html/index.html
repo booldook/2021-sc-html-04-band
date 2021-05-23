@@ -7,8 +7,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>BAND</title>
 	<link rel="stylesheet" href="../css/all.min.css">
+	<link rel="stylesheet" href="../css/animate.min.css">
 	<link rel="stylesheet" href="../css/base.css">
 	<link rel="stylesheet" href="../css/index.css">
+	<script src="../js/wow.min.js"></script>
 </head>
 
 <body>
@@ -45,9 +47,9 @@
 	<!-- band-wrapper -->
 	<section class="band-wrapper">
 		<div class="wrapper">
-			<h2 class="title">THE BAND</h2>
-			<h3 class="title">We love music</h3>
-			<p class="content">
+			<h2 class="title wow bounceInUp">THE BAND</h2>
+			<h3 class="title wow bounceInUp">We love music</h3>
+			<p class="content wow bounceInUp">
 				We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 				eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
 				ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
@@ -58,15 +60,15 @@
 			</p>
 			<div class="member-wrap clear">
 				<!-- .member*3>h4.title+img.w100 -->
-				<div class="member">
+				<div class="member wow bounceInLeft">
 					<h4 class="title">Name</h4>
 					<img src="../img/bandmember.jpg" alt="name" class="w100">
 				</div>
-				<div class="member">
+				<div class="member wow bounceInUp">
 					<h4 class="title">Name</h4>
 					<img src="../img/bandmember.jpg" alt="name" class="w100">
 				</div>
-				<div class="member">
+				<div class="member wow bounceInRight">
 					<h4 class="title">Name</h4>
 					<img src="../img/bandmember.jpg" alt="name" class="w100">
 				</div>
@@ -80,21 +82,21 @@
 			<h2 class="title">TOUR DATES</h2>
 			<h3 class="title">Remember to book your tickets!</h3>
 			<div class="list-wrap">
-				<div class="list list1">
+				<div class="list list1 wow swing">
 					September
 					<span class="soldout">Soldout</span>
 				</div>
-				<div class="list list2">
+				<div class="list list2 wow swing">
 					October
 					<span class="soldout">Soldout</span>
 				</div>
-				<div class="list list3">
+				<div class="list list3 wow swing">
 					November
 					<span class="count">3</span>
 				</div>
 			</div>
 			<div class="city-wrap clear">
-				<div class="city">
+				<div class="city wow bounceInLeft">
 					<div class="img-wrap">
 						<img src="../img/newyork.jpg" alt="뉴욕" class="w100">
 					</div>
@@ -105,7 +107,7 @@
 						<button class="bt-buy">Buy Tickets</button>
 					</div>
 				</div>
-				<div class="city">
+				<div class="city wow bounceInDown">
 					<div class="img-wrap">
 						<img src="../img/paris.jpg" alt="파리" class="w100">
 					</div>
@@ -116,7 +118,7 @@
 						<button class="bt-buy">Buy Tickets</button>
 					</div>
 				</div>
-				<div class="city">
+				<div class="city wow bounceInRight">
 					<div class="img-wrap">
 						<img src="../img/sanfran.jpg" alt="샌프란" class="w100">
 					</div>
@@ -182,6 +184,7 @@
 			Powered by <a href="//w3schools.com" target="_blank">w3.css</a>
 		</div>
 	</footer>
+	<script>new WOW().init();</script>
 </body>
 
 </html>
