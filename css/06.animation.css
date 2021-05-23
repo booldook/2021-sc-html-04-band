@@ -82,7 +82,7 @@ html, body {height: 10000px;}
 	perspective: 600px;
 	position: relative;
 }
-.pers-wrap .box {width: 100%; background-color: rgba(0,0,0,.7); color: #fff; padding: 36px 16px; position: absolute; bottom: 0;
+.pers-wrap .box {width: 100%; background-color: rgba(0,0,0,.7); color: #fff; padding: 36px 16px; position: absolute; bottom: 0; left: 0;
 	transition: all 2s; 
 	transform-style: preserve-3d;
 	transform: rotateX(-180deg);
